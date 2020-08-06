@@ -8,12 +8,5 @@ export default defineConfig({
   mpa: {},
   routes: [
     { path: '/', component: '@/pages/index' },
-  ],
-  chainWebpack(memo) {
-    memo.plugin('pwa')
-      .use(WorkboxPlugin.GenerateSW, [{
-        clientsClaim: true,
-        skipWaiting: true,
-      }]);
-  },
+  ]
 });
