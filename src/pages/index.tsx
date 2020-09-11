@@ -59,7 +59,7 @@ export default () => {
       <CssBaseline />
       <Container>
         <Grid container spacing={2} justify="center">
-          <Grid item xs={10} xl={5} md={6} sm={8}>
+          <Grid item xs={12} sm={10} md={8} xl={8}>
             <List component="nav" aria-label="main mailbox folders">
               <TextItem label={'事业'} value={work} onChange={setWork}>
                 <Work />
